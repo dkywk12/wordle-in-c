@@ -12,7 +12,7 @@
 int main(){
     setGame();
 
-    startMenu();
+    //startMenu();
     initializer();
     while(1){
         drawScreen();
