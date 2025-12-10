@@ -5,7 +5,7 @@
 #include "src/guesser.h"
 
 #ifdef _WIN32
-    #include<conio.h> //getch and kbhit in Windows
+    #include<conio.h>
     #include<windows.h>
 #endif
 
