@@ -24,6 +24,4 @@ typedef struct{
     int x, y;
 }Coordinate;
 
-int equalCoordinates(const Coordinate*, const Coordinate*);
-
 #endif

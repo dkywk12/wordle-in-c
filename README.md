@@ -1,4 +1,6 @@
 # Wordle In C++
-Try to recreate Wordle in C++
+Trying to recreate Wordle in C++
 
-[Word Bank](https://cs.stanford.edu/~knuth/sgb-words.txt)
+I used this [word bank](https://cs.stanford.edu/~knuth/sgb-words.txt).
+
+

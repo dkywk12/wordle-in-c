@@ -9,9 +9,7 @@
 void setGame(){
     setTerminalMode();
     #ifdef _WIN32
-        SetConsoleCtrlHandler(NULL, TRUE); //Disable signal handling in Windows,
-        //this is so that Ctrl + C doesn't work and the terminal can be properly
-        //restored
+        SetConsoleCtrlHandler(NULL, TRUE);
     #endif
     clearScreen();
 }
@@ -22,8 +20,8 @@ void quitGame(){
     resetColor();
     resetTerminalMode();
     #ifdef _WIN32
-        SetConsoleCtrlHandler(NULL, FALSE); //Restore signal handling in Windows
+        SetConsoleCtrlHandler(NULL, FALSE);
     #endif
     showCursor();
-    exit(EXIT_SUCCESS); //Terminate program
+    exit(EXIT_SUCCESS);
 }
