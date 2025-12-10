@@ -11,6 +11,9 @@ Color black = {0, 0, 0};
 
 Color boardColor = {10, 10, 10};
 Color textColor = {255, 255, 255};
+Color correctColor = {22, 166, 32};
+Color incorrectColor = {128, 128, 128};
+Color partialColor = {242, 230, 44};
 
 //In Windows we need to enable ANSI escape codes to
 //interact with the terminal more easily

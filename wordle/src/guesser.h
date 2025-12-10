@@ -3,6 +3,8 @@
 
 #include<string>
 
+void initializer();
+void selectRandomWord();
 std::string inputHandler();
 
 #endif

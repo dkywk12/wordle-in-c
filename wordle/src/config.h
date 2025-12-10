@@ -2,7 +2,7 @@
 #define _CONFIG_H_
 
 #define SCREEN_C 40 
-#define SCREEN_R 11
+#define SCREEN_R 15
 
 #ifdef _WIN32
 	#define keyEnter '\r'

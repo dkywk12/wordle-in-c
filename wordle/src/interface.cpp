@@ -1,4 +1,3 @@
-#include <iostream>
 #include <fstream>
 #include "tools.h"
 #include "config.h"
@@ -28,15 +27,15 @@ void startMenu(){
         }
     }
 
-    std::ifstream input;
-    input.open("assets\\title.txt", std::ifstream::in);
+    std::ifstream titleFile;
+    titleFile.open("assets\\title.txt", std::ifstream::in);
 
     setColorForeground(&white);
     gotoxy(startMenuPosition.x, startMenuPosition.y);
     char ch;
     int lineNumber = 0;
-    while(input.good()){
-        input.get(ch);
+    while(titleFile.good()){
+        titleFile.get(ch);
         if(ch == '\n'){
             lineNumber++;
             gotoxy(startMenuPosition.x + lineNumber, startMenuPosition.y);
@@ -45,7 +44,7 @@ void startMenu(){
             printf("%c", ch);
         }
     }
-    input.close();
+    titleFile.close();
     fflush(stdout);
 
     char key;

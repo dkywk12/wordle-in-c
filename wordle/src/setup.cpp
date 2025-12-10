@@ -1,4 +1,3 @@
-#include<time.h>
 #include "tools.h"
 #include "setup.h"
 
@@ -15,8 +14,6 @@ void setGame(){
         //restored
     #endif
     clearScreen();
-
-    srand(time(NULL)); //So the seed changes in every run
 }
 
 void quitGame(){

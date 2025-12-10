@@ -12,6 +12,9 @@ extern Color black;
 
 extern Color boardColor;
 extern Color textColor;
+extern Color correctColor;
+extern Color incorrectColor;
+extern Color partialColor;
 
 void setTerminalMode();
 void resetTerminalMode();
