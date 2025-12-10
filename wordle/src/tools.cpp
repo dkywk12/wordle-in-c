@@ -9,11 +9,11 @@
 Color white = {255, 255, 255};
 Color black = {0, 0, 0};
 
-Color boardColor = {10, 10, 10};
-Color textColor = {217, 217, 217};
+Color boardColor = {20, 20, 20};
+Color textColor = {255, 255, 255};
 Color correctColor = {22, 166, 32};
-Color incorrectColor = {128, 128, 128};
-Color partialColor = {227, 212, 45};
+Color incorrectColor = {120, 124, 127};
+Color partialColor = {255, 215, 39};
 
 
 #ifdef _WIN32

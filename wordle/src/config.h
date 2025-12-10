@@ -17,7 +17,7 @@
 
 // This is in 'BLOCK' dimensions
 
-#define BOARD_W 7
+#define BOARD_W 9
 #define BOARD_H 8
 
 typedef struct{

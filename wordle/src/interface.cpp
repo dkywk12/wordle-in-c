@@ -14,7 +14,7 @@ const Board board = {
         BOARD_W, BOARD_H}; 
 
 const Coordinate startMenuPosition = {(SCREEN_R - 4) / 2, (SCREEN_C - 34) / 2};
-const Coordinate inputPosition = {1, 1};
+const Coordinate inputPosition = {(BOARD_H - 6) / 2, (BOARD_W - 5) / 2};
 
 void startMenu(){
     hideCursor();
