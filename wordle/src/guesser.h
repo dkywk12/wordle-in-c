@@ -5,6 +5,6 @@
 
 void initializer();
 void selectRandomWord();
-std::string inputHandler();
+void startGuessing();
 
 #endif
