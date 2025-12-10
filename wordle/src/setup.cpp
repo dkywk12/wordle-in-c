@@ -24,6 +24,9 @@ void quitGame(){
     clearScreen();
     resetColor();
     resetTerminalMode();
+    #ifdef _WIN32
+        SetConsoleCtrlHandler(NULL, FALSE); //Restore signal handling in Windows
+    #endif
     showCursor();
     exit(EXIT_SUCCESS); //Terminate program
 }

@@ -10,13 +10,8 @@ typedef struct{
 extern Color white;
 extern Color black;
 
-extern Color snakeStartColor;
-extern Color snakeEndColor;
-
-extern Color superFruitColor;
-extern Color fruitColor;
 extern Color boardColor;
-extern Color borderColor;
+extern Color textColor;
 
 void setTerminalMode();
 void resetTerminalMode();

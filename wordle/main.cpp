@@ -14,8 +14,12 @@ int main(){
     setGame();
 
     startMenu();
+
     drawScreen();
     
+    gotoxy(screen.position.x + BLOCK_H * (board.position.x + inputPosition.x),
+        screen.position.y + BLOCK_W * (board.position.y + inputPosition.y));
+    showCursor();
     inputHandler();
 
     quitGame();

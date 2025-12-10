@@ -15,7 +15,7 @@ const Board board = {
         BOARD_W, BOARD_H}; 
 
 const Coordinate startMenuPosition = {(SCREEN_R - 4) / 2, (SCREEN_C - 34) / 2};
-const Coordinate inputPosition = {2, 2};
+const Coordinate inputPosition = {1, 1};
 
 void startMenu(){
     hideCursor();
@@ -50,10 +50,9 @@ void startMenu(){
 
     char key;
     while(1){ 
-        if(kbhit()){ //Wait til a key is pressed
+        if(kbhit()){
             key = getch();
-            if(key == keyEnter){ //Start game if it's an Enter
-                showCursor();
+            if(key == keyEnter){
                 break;
             }
             if(key == keyQuit){
@@ -64,6 +63,7 @@ void startMenu(){
 }
 
 void drawScreen(){
+    hideCursor();
     setColorBackground(&black);
     for(int i = 0; i < screen.height; i++){
         for(int j = 0; j < screen.width; j++){
@@ -71,8 +71,7 @@ void drawScreen(){
             printf(BLOCK);
         }
     }
-
-    //This paints the board, including the border
+    
     for(int i = 0; i < board.height; i++){
         for(int j = 0; j < board.width; j++){
             setColorBackground(&boardColor);

@@ -9,13 +9,8 @@
 Color white = {255, 255, 255};
 Color black = {0, 0, 0};
 
-Color boardColor = {5, 10, 10};
-
-Color snakeStartColor = {16, 42, 148};
-Color snakeEndColor = {53, 208, 229};
-
-Color superFruitColor = {255, 230, 0};
-Color fruitColor = {0, 255, 110};
+Color boardColor = {10, 10, 10};
+Color textColor = {255, 255, 255};
 
 //In Windows we need to enable ANSI escape codes to
 //interact with the terminal more easily
